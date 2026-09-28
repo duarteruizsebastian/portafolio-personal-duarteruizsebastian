@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duarte Ruiz Sebastian · Portafolio</title>
+  <meta name="description" content="Portafolio de Duarte Ruiz Sebastian — Aplicaciones Web, Django, MySQL, Tailwind y Render.">
+  <link rel="icon" href="data:,">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',
+              500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'
+            },
+            ink: '#0f172a'
+          },
+          fontFamily: {
+            sans: ['Inter','ui-sans-serif','system-ui','sans-serif'],
+            mono: ['JetBrains Mono','ui-monospace','SFMono-Regular','monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+    code, .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-ink antialiased">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#inicio" class="flex items-center" aria-label="Inicio">
+          <img src="img/logo-sd.png" alt="Logo Sebastian Duarte" class="h-12 w-auto object-contain">
+        </a>
+        <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="#sobre-mi" class="hover:text-brand-700">Sobre mí</a>
+          <a href="#stack" class="hover:text-brand-700">Stack</a>
+          <a href="#proyecto" class="hover:text-brand-700">Proyecto</a>
+          <a href="#entregas" class="hover:text-brand-700">Entregas</a>
+          <a href="#contacto" class="hover:text-brand-700">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== DATOS DEL ALUMNO ===================== -->
+  <section id="inicio" class="relative overflow-hidden bg-ink">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-900 via-ink to-slate-900"></div>
+    <div class="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand-600/30 blur-3xl"></div>
+
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+        <img src="img/foto.jpg" alt="Foto de Sebastian Duarte" class="h-28 w-28 rounded-full object-cover flex-none border-4 border-white/20">
+
+        <div class="text-center sm:text-left">
+          <p class="text-brand-300 text-xs font-semibold uppercase tracking-wide">Portafolio · Aplicaciones Web</p>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Duarte Ruiz Sebastian</h1>
+          <p class="text-slate-300 mt-2">
+            Matrícula: <span class="text-white font-semibold">25311011</span> ·
+            Grupo: <span class="text-white font-semibold">4-1</span>
+          </p>
+          <p class="mt-4 text-slate-300 max-w-xl">
+            Soy estudiante de Ingeniería en Diseño de Software Multiplataforma. Me interesa el desarrollo web y la creación de aplicaciones funcionales con interfaces claras, bases de datos y servicios publicados en la nube.
+          </p>
+
+          <div class="mt-6 flex flex-wrap justify-center sm:justify-start gap-3">
+            <a href="https://github.com/duarteruizsebastian" target="_blank" rel="noopener noreferrer"
+               class="rounded-lg bg-white text-ink font-semibold px-4 py-2 text-sm hover:bg-slate-100 transition">GitHub</a>
+            <a href="https://www.linkedin.com/in/sebastian-duarte-90b292433/" target="_blank" rel="noopener noreferrer"
+               class="rounded-lg bg-white/10 text-white font-semibold px-4 py-2 text-sm border border-white/20 hover:bg-white/20 transition">LinkedIn</a>
+            <a href="#entregas"
+               class="rounded-lg bg-brand-600 text-white font-semibold px-4 py-2 text-sm hover:bg-brand-500 transition">Ver mis entregas →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE MÍ ===================== -->
+  <section id="sobre-mi" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">Sobre mí</p>
+    <h2 class="text-2xl font-extrabold mt-1">Un poco más de contexto</h2>
+    <p class="mt-4 text-slate-600 max-w-2xl">
+      Actualmente estudio Ingeniería en Diseño de Software Multiplataforma. En la materia de Aplicaciones Web he trabajado con HTML, Tailwind CSS, Django, MySQL y Render. Mi objetivo es seguir mejorando mis habilidades de programación y crear proyectos web completos que puedan publicarse y utilizarse desde distintos dispositivos.
+    </p>
+  </section>
+
+  <!-- ===================== LOGOTIPO ===================== -->
+  <!-- ===================== STACK TECNOLÓGICO ===================== -->
+  <section id="stack" class="bg-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">Stack</p>
+      <h2 class="text-2xl font-extrabold mt-1">Tecnologías que usé en este curso</h2>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="px-4 py-2 rounded-full bg-orange-50 text-orange-700 text-sm font-semibold border border-orange-200">HTML5 semántico</span>
+        <span class="px-4 py-2 rounded-full bg-sky-50 text-sky-700 text-sm font-semibold border border-sky-200">Tailwind CSS</span>
+        <span class="px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-200">Django (Python)</span>
+        <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-200">MySQL en la nube</span>
+        <span class="px-4 py-2 rounded-full bg-violet-50 text-violet-700 text-sm font-semibold border border-violet-200">Render</span>
+        <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm font-semibold border border-slate-300">Git + GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROYECTO INTEGRADOR ===================== -->
+<section id="proyecto" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">
+    Proyecto Integrador
+  </p>
+
+  <h2 class="text-2xl font-extrabold mt-1">
+    PixelStore
+  </h2>
+
+  <p class="mt-4 text-slate-600 max-w-2xl">
+    PixelStore es un proyecto orientado a la gestión y presentación de información
+    de una tienda de videojuegos. El sistema contempla apartados relacionados con
+    clientes, ventas, videojuegos y usuarios, buscando organizar la información
+    de forma clara y facilitar su administración.
+  </p>
+
+  <div class="mt-8 rounded-2xl border border-slate-200 overflow-hidden bg-white">
+    <img
+      src="img/captura-pixelstore.png"
+      class="w-full object-cover"
+      alt="Captura de PixelStore"
+    >
+  </div>
+
+  <div class="mt-6">
+    <span class="inline-flex items-center gap-2 rounded-lg bg-slate-200 text-slate-600 font-semibold px-5 py-3 text-sm">
+      Proyecto integrador · en desarrollo
+    </span>
+  </div>
+</section>
+  <!-- ===================== ENTREGAS ===================== -->
+  <section id="entregas" class="bg-ink text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <p class="text-brand-300 font-semibold text-xs uppercase tracking-wide">Evidencia por unidad</p>
+      <h2 class="text-2xl font-extrabold mt-1">Mis entregas publicadas</h2>
+      <p class="mt-3 text-slate-300 max-w-2xl">
+        Aquí se muestran las evidencias realizadas durante el curso. Las unidades que todavía no se han trabajado permanecen marcadas como pendientes.
+      </p>
+
+      <ul class="mt-8 grid sm:grid-cols-2 gap-4">
+        <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
+          <p class="text-xs font-bold text-orange-300 uppercase">Unidad 1</p>
+          <p class="font-semibold mt-1">Portafolio estático (HTML + Tailwind)</p>
+          <a href="https://ine-personal-drs.onrender.com/" target="_blank" rel="noopener noreferrer"
+             class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">
+            https://ine-personal-drs.onrender.com/
+          </a>
+        </li>
+
+        <li class="rounded-xl bg-white/5 border border-white/10 p-5">
+          <p class="text-xs font-bold text-emerald-300 uppercase">Unidad 2</p>
+          <p class="font-semibold mt-1">App Django + MySQL en Render</p>
+          <p class="text-sm text-slate-400 mt-2">Pendiente</p>
+        </li>
+
+        <li class="rounded-xl bg-white/5 border border-white/10 p-5">
+          <p class="text-xs font-bold text-blue-300 uppercase">Unidad 3</p>
+          <p class="font-semibold mt-1">CRUD dinámico con login y sesiones</p>
+          <p class="text-sm text-slate-400 mt-2">Pendiente</p>
+        </li>
+
+        <li class="rounded-xl bg-white/5 border border-white/10 p-5">
+          <p class="text-xs font-bold text-purple-300 uppercase">Unidad 4</p>
+          <p class="font-semibold mt-1">Proyecto integrador final</p>
+          <p class="text-sm text-slate-400 mt-2">Pendiente</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">Contacto</p>
+    <h2 class="text-2xl font-extrabold mt-1">Hablemos</h2>
+    <div class="mt-6 flex flex-wrap gap-4 text-sm">
+      <a href="mailto:sebasdr_tians@hotmail.com"
+         class="rounded-lg border border-slate-300 px-4 py-2 font-semibold text-slate-700 hover:border-brand-400 hover:text-brand-700 transition">
+        ✉️ sebasdr_tians@hotmail.com
+      </a>
+      <a href="https://github.com/duarteruizsebastian" target="_blank" rel="noopener noreferrer"
+         class="rounded-lg border border-slate-300 px-4 py-2 font-semibold text-slate-700 hover:border-brand-400 hover:text-brand-700 transition">
+        GitHub: duarteruizsebastian
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-slate-100 border-t border-slate-200 text-slate-500 text-sm">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-2">
+      <p>© 2026 Duarte Ruiz Sebastian. Todos los derechos reservados.</p>
+      <p>Aplicaciones Web · Docente: Bernardo Prado Díaz</p>
+    </div>
+  </footer>
+
+</body>
+</html>
